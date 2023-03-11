@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <title>Simple Blackjack Game API</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>The REST API of Blackjack Game</h1>
+  <p>Author: Moshe Binnun</a></p>
+  <hr>
+  <h2>BlackjackGame Rest API</h2>
+  <p>Backend API files of blackjack game.</p>
+  <hr>
+  <h2>To install</h2>
+  <p>
+    <strong>
+      git clone <a href="https://.../blackjack-app-back">https://.../blackjack-app-back</a><br>
+      cd blackjack-app-back<br>
+      cp .env.example .env<br>
+    </strong>
+  </p>
+  <p>- fill in all the parameters in the .env file. Tune them to your needs</p>
+  <p>- on your mongodb server, create a db named <strong>GAMES</strong> and a collection name <strong>TblGames</strong></p>
+  <p>
+    <strong>npm install</strong>
+  </p>
+  <hr>
+  <h2>Start the API server</h2>
+  <p><strong>npm start</strong></p>
+  <hr>
+  <h2>The Restful APIs collection</h2>
+  <p>
+    <strong>[GET]: <a href="/api/games/">/api/games/</a></strong><br>
+    [Description] Fetch the games list
+  </p>
+  <p>
+    <strong>[GET]: <a href="/api/games/{:id}">/api/games/{:id}</a></strong><br>
+    [Description] Fetch the details of a game by id
+  </p>
+  <p>
+    <strong>[POST]: <a href="/api/games/">/api/games/</a></strong><br>
+    [Description] Register a new game<br>
+  </p>
+  <p>
+    <strong>[PUT]: <a href="/api/games/restart">/api/games/restart/{:id}</a></strong><br>
+    [Params] id<br>
+    [Description] Restart a game to the initial state<br>
+  </p>
+  <p>
+    <strong>[PUT]: <a href="/api/games/bet">/api/games/bet/{:id}</a></strong><br>
+    [Params] id, bet<br>
+    [Description] Place a bet in a game<br>
+    [Rem] Bet should be an integer number<br>
+  </p>
+  <p>
+    <strong>[PUT]: <a href="/api/games/take">/api/games/take/{:id}</a></strong><br>
+    [Params] id<br>
+    [Description] Player takes a card in a game<br>
+  </p>
+  <p>
+    <strong>[PUT]: <a href="/api/games/expose">/api/games/expose/{:id}</a></strong><br>
+    [Params] id<br>
+    [Description] Expose all the cards in a game (including dealer cards)<br>
+  </p>
+</body>
+
+</html>
