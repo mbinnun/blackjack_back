@@ -1,4 +1,4 @@
-## EmployeeSys Rest API
+## Simple Blackjack Rest API
 
 Backend API files of Blackjack Game.
 
